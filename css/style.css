@@ -1,3 +1,73 @@
 *{
-    background-color: lawngreen;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e6e6e6;
+}
+header, main, footer{ /*LAS COMAS SIRVEN PARA APLICAR A TODOS*/
+    width: 90%;
+    margin: 20px auto;
+}
+header > nav{ /*LOS PICOS REPRESENTAN RELACION FAMILIAR*/
+    background-color: #528fd5;
+    overflow: hidden; /*HACE QUE EL TEXTO SE ACOMODE Y NO MATE EL FLOAT DEL HIJO*/
+}
+header > nav > ul{
+    list-style: none; /*SACA LOS PUNTOS DE LA LISTA*/
+}
+header > nav > ul > li{
+    float: left;
+}
+header > nav > ul > li > a{
+    padding: 10px 20px;
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+}
+header > nav > ul > li > a:hover{
+    background-color: #75acec;
+}
+section{
+    width: 68%;
+    float: left; /*DESAPARECE EL 30% DE MARGEN RESTANTE*/
+    margin-right: 2%;
+}
+aside{
+    width: 30%;
+    background-color: #ff8800;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box; /*RESPETA EL BORDE DE LA CAJA Y NO AGREGA MAS PIXELES SI NO QUE USE LOS QUE YA TIENE// DE LA CAJA HACIA DENTRO*/
+}
+aside > h3{
+    text-align: center;
+}
+article{
+    padding: 20px;
+    background-color: lightyellow;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: gray;
+    clear: both;
+    padding: 10px 0;
+    text-align: center;
+}
+figure{
+    padding: 30px;
+}
+h2{
+    text-align: center;
+}
+.fondo1{
+    background-image: url('../img/flor1.jpg');/*LLAMAR UNA IMAGEN DE OTRA CARPETA SE USA DOS PUNTOS*/
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+.fondo2{
+    background-image: url('../img/flor2.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
 }
